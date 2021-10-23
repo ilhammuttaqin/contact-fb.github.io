@@ -1,0 +1,22 @@
+*link cdn firebase
+https://firebase.google.com/docs/web/learn-more#web-version-9
+
+*CDN Firebase firestore V8
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+const firebaseConfig = {
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
+};
+
+*Inisialisasi Firebase V8
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+var db = firebase.firestore();
